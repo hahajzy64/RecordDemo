@@ -82,7 +82,8 @@
 		4AE310071E11093700D5A9D3 /* _r_859904_1vIU.acc in Resources */ = {isa = PBXBuildFile; fileRef = 4AE30FC41E11093700D5A9D3 /* _r_859904_1vIU.acc */; };
 		4AE310081E11093700D5A9D3 /* _r_922936_8R24.acc in Resources */ = {isa = PBXBuildFile; fileRef = 4AE30FC51E11093700D5A9D3 /* _r_922936_8R24.acc */; };
 		4AE310091E11093700D5A9D3 /* _r_970363_645s.acc in Resources */ = {isa = PBXBuildFile; fileRef = 4AE30FC61E11093700D5A9D3 /* _r_970363_645s.acc */; };
-		4AE3100C1E11142500D5A9D3 /* SMPlayRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE3100B1E11142500D5A9D3 /* SMPlayRecordManager.m */; };
+		4AE310131E11177F00D5A9D3 /* SMPlayRecordManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE310101E11177F00D5A9D3 /* SMPlayRecordManager.m */; };
+		4AE310141E11177F00D5A9D3 /* SMRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE310121E11177F00D5A9D3 /* SMRecorder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,8 +187,10 @@
 		4AE30FC41E11093700D5A9D3 /* _r_859904_1vIU.acc */ = {isa = PBXFileReference; lastKnownFileType = file; path = _r_859904_1vIU.acc; sourceTree = "<group>"; };
 		4AE30FC51E11093700D5A9D3 /* _r_922936_8R24.acc */ = {isa = PBXFileReference; lastKnownFileType = file; path = _r_922936_8R24.acc; sourceTree = "<group>"; };
 		4AE30FC61E11093700D5A9D3 /* _r_970363_645s.acc */ = {isa = PBXFileReference; lastKnownFileType = file; path = _r_970363_645s.acc; sourceTree = "<group>"; };
-		4AE3100A1E11142500D5A9D3 /* SMPlayRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPlayRecordManager.h; sourceTree = "<group>"; };
-		4AE3100B1E11142500D5A9D3 /* SMPlayRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPlayRecordManager.m; sourceTree = "<group>"; };
+		4AE3100F1E11177F00D5A9D3 /* SMPlayRecordManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPlayRecordManager.h; sourceTree = "<group>"; };
+		4AE310101E11177F00D5A9D3 /* SMPlayRecordManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPlayRecordManager.m; sourceTree = "<group>"; };
+		4AE310111E11177F00D5A9D3 /* SMRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRecorder.h; sourceTree = "<group>"; };
+		4AE310121E11177F00D5A9D3 /* SMRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMRecorder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,12 +241,11 @@
 		4AE30F4F1E1108B300D5A9D3 /* AVAudioPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4AE3100E1E11177F00D5A9D3 /* Manager */,
 				4AE30F531E1108B300D5A9D3 /* AppDelegate.h */,
 				4AE30F541E1108B300D5A9D3 /* AppDelegate.m */,
 				4AE30F561E1108B300D5A9D3 /* ViewController.h */,
 				4AE30F571E1108B300D5A9D3 /* ViewController.m */,
-				4AE3100A1E11142500D5A9D3 /* SMPlayRecordManager.h */,
-				4AE3100B1E11142500D5A9D3 /* SMPlayRecordManager.m */,
 				4AE30F591E1108B300D5A9D3 /* Main.storyboard */,
 				4AE30F5C1E1108B300D5A9D3 /* Assets.xcassets */,
 				4AE30F5E1E1108B300D5A9D3 /* LaunchScreen.storyboard */,
@@ -352,6 +354,17 @@
 				4AE30FC61E11093700D5A9D3 /* _r_970363_645s.acc */,
 			);
 			path = Voice;
+			sourceTree = "<group>";
+		};
+		4AE3100E1E11177F00D5A9D3 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				4AE3100F1E11177F00D5A9D3 /* SMPlayRecordManager.h */,
+				4AE310101E11177F00D5A9D3 /* SMPlayRecordManager.m */,
+				4AE310111E11177F00D5A9D3 /* SMRecorder.h */,
+				4AE310121E11177F00D5A9D3 /* SMRecorder.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -557,10 +570,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE3100C1E11142500D5A9D3 /* SMPlayRecordManager.m in Sources */,
+				4AE310131E11177F00D5A9D3 /* SMPlayRecordManager.m in Sources */,
 				4AE30F581E1108B300D5A9D3 /* ViewController.m in Sources */,
 				4AE30F551E1108B300D5A9D3 /* AppDelegate.m in Sources */,
 				4AE30F521E1108B300D5A9D3 /* main.m in Sources */,
+				4AE310141E11177F00D5A9D3 /* SMRecorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
